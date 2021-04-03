@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 50px 50px 50px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  height: fit-content;
+}
+
+.error {
+  font-family: Roboto serif;
+  color: #B1B1B1;
+
+  .error--title {
+    font: 400 48px Roboto;
+    margin-bottom: 30px;
+  }
+
+  .error--subtitle {
+    font: 400 24px Roboto;
+    margin-bottom: 15px;
+  }
+
+  .error--link {
+    font: 400 18px Roboto;
+    color: #FF7754;
+    text-decoration: underline;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .error {
+    .error--subtitle {
+      font-size: 36px;
+      margin-top: 40px;
+      margin-bottom: 25px;
+    }
+
+    .error--link {
+      font-size: 28px;
+    }
+  }
+}
