@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 50px 50px 50px 50px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 100%;
+  column-gap: 30px;
+  margin-bottom: 25px;
+}
+
+.edits {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  column-gap: 20px;
+}
+
+.cirleIcon-account {
+  width: 130px;
+  height: 130px;
+  margin-left: auto;
+}
+
+.cirleIcon-upload {
+  margin-right: auto;
+}
+
+.account {
+  text-align: center;
+  .account--title {
+    font: 500 24px Raleway;
+    margin-bottom: 10px;
+  }
+  .account--fullname {
+    font: 500 18px Raleway;
+    margin-bottom: 40px;
+    color: #B1B1B1;
+  }
+}
+
+.fields, .inputs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 25px;
+  column-gap: 20px;
+  margin-bottom: 46px;
+
+  .fieldInfo, .input {
+    flex-basis: 100%;
+    flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 700px;
+    margin: auto;
+    height: fit-content;
+
+    .fieldInfo, .input {
+      flex-basis: calc(50% - 20px);
+    }
+
+    .edits {
+      flex-direction: row;
+    }
+  }
+}
