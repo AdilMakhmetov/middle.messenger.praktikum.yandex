@@ -1,5 +1,4 @@
 import prepareTemplate from '../../static/templates/error.hbs';
-// import '/static/scss/error.scss';
 
 class Error {
   constructor() {

@@ -1,7 +1,9 @@
 import { Router } from './router/router';
+import EntryMixin from './mixins/entry.mixin.js';
 
 const router = new Router();
 
 const main = document.getElementById('main');
-router.controller.render(main);
-router.controller.addListeners();
+const controller = new router.controller;
+controller.render(main);
+EntryMixin.addListeners();

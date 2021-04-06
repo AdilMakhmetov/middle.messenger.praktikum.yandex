@@ -27,7 +27,6 @@ export class Router {
 
     this.match = this.potentialMatches.find(potentialMatch => potentialMatch.isMatch);
     this._controller = this.match ? this.match.route.controller : Error;
-    this._controller = new this._controller;
   }
 
   get controller() {

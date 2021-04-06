@@ -17,7 +17,6 @@ import location from '../../static/vector/Location.svg';
 import attach from '../../static/vector/attach-file-icon.svg';
 import smile from '../../static/vector/smile-icon.svg';
 import send from '../../static/vector/send-message-icon.svg';
-// import '/static/scss/chat.scss';
 
 class Chat {
   constructor() {
