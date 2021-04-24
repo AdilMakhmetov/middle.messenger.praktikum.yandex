@@ -1,3 +1,4 @@
+export default `
 <div class="container">
   <div class="actions">
     <button class="back">
@@ -51,3 +52,4 @@
     </div>
   </div>
 </div>
+`

@@ -34,6 +34,32 @@ p{
   background: transparent;
 }
 
+#main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+#nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+  z-index: 10000;
+  background: #00000099;
+
+  & a {
+    color: #ffffff;
+    text-decoration: none;
+    &:hover {
+      color: #ff7754;
+    }
+  }
+}
+
 .button {
   display: flex;
   align-items: center;

@@ -1,26 +1,27 @@
+export default `
 <div class="container">
   <header class="header">
     <img class="logo" src="{{ logo }}" alt="">
     <div class="tagline tagline-mr">
       <p class="tagline--text">Keep In Touch</p>
-      <img alt="" class="tagline--icon" src="{{dotsPicture}}">
+      <img alt="" class="tagline--icon" src="{{dots}}">
     </div>
     <button class="button button-primary mobileHide">+ Добавить пользователя</button>
     <div class="header--profile">
       <img src="{{photo}}" alt="">
-      <p class="header--name mobileHide">{{accountName}}</p>
+      <p class="header--name mobileHide">{{name}}</p>
     </div>
-    <img class="menuIcon" src="{{menuIcon}}" alt="">
+    <img class="menuIcon" src="{{menu}}" alt="">
   </header>
 
   <sidebar class="sidebar">
     <div class="search">
-      <img src="{{searchIcon}}" alt="" class="search--icon">
+      <img src="{{search}}" alt="" class="search--icon">
       <input type="text" class="search--input" placeholder="Поиск...">
     </div>
     <nav class="peoples">
       <div class="people people-active">
-        <img class="people--avatar" src="{{userPic}}" alt="" >
+        <img class="people--avatar" src="{{user}}" alt="" >
         <div class="people--info">
           <p class="people--name">John Doe</p>
           <p class="people--message">Hi, Text me when you can...</p>
@@ -32,7 +33,7 @@
       </div>
       <div class="people">
         <div class="people--avatar">
-          <img src="{{userPic}}" alt="" >
+          <img src="{{user}}" alt="" >
         </div>
         <div class="people--info">
           <p class="people--name">Anna Doe</p>
@@ -45,7 +46,7 @@
       </div>
       <div class="people">
         <div class="people--avatar">
-          <img src="{{userPic}}" alt="" >
+          <img src="{{user}}" alt="" >
         </div>
         <div class="people--info">
           <p class="people--name">Dan Green</p>
@@ -57,7 +58,7 @@
         </div>
       </div>
       <div class="people">
-        <img class="people--avatar" src="{{userPic}}" alt="" >
+        <img class="people--avatar" src="{{user}}" alt="" >
         <div class="people--info">
           <p class="people--name">John Doe</p>
           <p class="people--message">Hi, Text me when you can...</p>
@@ -69,7 +70,7 @@
       </div>
       <div class="people">
         <div class="people--avatar">
-          <img src="{{userPic}}" alt="" >
+          <img src="{{user}}" alt="" >
         </div>
         <div class="people--info">
           <p class="people--name">Anna Doe</p>
@@ -82,7 +83,7 @@
       </div>
       <div class="people">
         <div class="people--avatar">
-          <img src="{{userPic}}" alt="" >
+          <img src="{{user}}" alt="" >
         </div>
         <div class="people--info">
           <p class="people--name">Dan Green</p>
@@ -95,7 +96,7 @@
       </div>
       <div class="people">
         <div class="people--avatar">
-          <img src="{{userPic}}" alt="" >
+          <img src="{{user}}" alt="" >
         </div>
         <div class="people--info">
           <p class="people--name">Anna Doe</p>
@@ -108,7 +109,7 @@
       </div>
       <div class="people">
         <div class="people--avatar">
-          <img src="{{userPic}}" alt="" >
+          <img src="{{user}}" alt="" >
         </div>
         <div class="people--info">
           <p class="people--name">Dan Green</p>
@@ -121,7 +122,7 @@
       </div>
       <div class="people">
         <div class="people--avatar">
-          <img src="{{userPic}}" alt="" >
+          <img src="{{user}}" alt="" >
         </div>
         <div class="people--info">
           <p class="people--name">Anna Doe</p>
@@ -134,7 +135,7 @@
       </div>
       <div class="people">
         <div class="people--avatar">
-          <img src="{{userPic}}" alt="" >
+          <img src="{{user}}" alt="" >
         </div>
         <div class="people--info">
           <p class="people--name">Dan Green</p>
@@ -147,7 +148,7 @@
       </div>
       <div class="people">
         <div class="people--avatar">
-          <img src="{{userPic}}" alt="" >
+          <img src="{{user}}" alt="" >
         </div>
         <div class="people--info">
           <p class="people--name">Anna Doe</p>
@@ -160,7 +161,7 @@
       </div>
       <div class="people">
         <div class="people--avatar">
-          <img src="{{userPic}}" alt="" >
+          <img src="{{user}}" alt="" >
         </div>
         <div class="people--info">
           <p class="people--name">Dan Green</p>
@@ -184,7 +185,7 @@
       </button>
       <div class="interlocutor">
         <div class="profile">
-          <img src="{{userPic}}" alt="">
+          <img src="{{user}}" alt="">
         </div>
         <div class="interlocutor--text">
           <div class="interlocutor--name">John Doe</div>
@@ -209,13 +210,13 @@
           <div class="chat--items">
             <div class="chat--item chat--item-me">
               <div class="profile">
-                <img src="{{userPic}}" alt="">
+                <img src="{{user}}" alt="">
               </div>
               <div class="chat--message">
                 <p class="chat--text">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                 <div class="chat--messageInfo">
                   <span class="chat--time">22:10</span>
-                  <img class="chat--status" src="/static/vector/Status.svg" alt="">
+                  <img class="chat--status" src="{{status}}" alt="">
                 </div>
               </div>
             </div>
@@ -227,7 +228,7 @@
                 <p class="chat--text">Where does it come from?</p>
                 <div class="chat--messageInfo">
                   <span class="chat--time">22:12</span>
-                  <img class="chat--status" src="/static/vector/Status.svg" alt="">
+                  <img class="chat--status" src="{{status}}" alt="">
                 </div>
               </div>
             </div>
@@ -238,13 +239,13 @@
           <div class="chat--items">
             <div class="chat--item chat--item-me">
               <div class="profile">
-                <img src="{{userPic}}" alt="">
+                <img src="{{user}}" alt="">
               </div>
               <div class="chat--message chat--message-me">
                 <p class="chat--text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
                 <div class="chat--messageInfo">
                   <span class="chat--time">00:16</span>
-                  <img class="chat--status" src="/static/vector/Status.svg" alt="">
+                  <img class="chat--status" src="{{status}}" alt="">
                 </div>
               </div>
             </div>
@@ -256,7 +257,7 @@
                 <p class="chat--text">some-file.pdf</p>
                 <div class="chat--messageInfo">
                   <span class="chat--time">22:12</span>
-                  <img class="chat--status" img src="/static/vector/Status.svg" alt="">
+                  <img class="chat--status" img src="{{status}}" alt="">
                 </div>
               </div>
             </div>
@@ -297,7 +298,7 @@
 <div class="confirm">
   <div class="overlay"></div>
   <div class="modal">
-    <img class="close" src="/static/vector/Cancel.svg" alt="">
+    <img class="close" src="{{cancel}}" alt="">
     <div class="modal--content">
       <p class="modal--text">Вы уверены что хотите {{ action }}?</p>
       <div class="modal--inline">
@@ -313,3 +314,4 @@
     </div>
   </div>
 </div>
+`

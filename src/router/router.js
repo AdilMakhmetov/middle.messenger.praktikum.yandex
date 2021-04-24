@@ -1,35 +1,104 @@
-import Login from '../controllers/login';
-import Register from '../controllers/register';
-import Account from '../controllers/account';
-import AccountEdit from '../controllers/account-edit';
-import AccountPassword from '../controllers/account-password';
-import Chat from '../controllers/chat';
-import Error from '../controllers/error';
+import Login from '../Components/Login';
+import Register from '../Components/Register';
+import Account from '../Components/Account';
+import AccountEdit from '../Components/AccountEdit';
+import AccountPassword from '../Components/AccountPassword';
+import Chat from '../Components/Chat';
+import Sandbox from '../Components/Sandbox';
+import Error from '../Components/Error';
 
-export class Router {
+export default class Router {
   constructor() {
+    if (Router.__instance) {
+      return Router.__instance;
+    }
+
     this.routes = [
-      { path: '/', controller: Login },
-      { path: '/index.html', controller: Login },
-      { path: '/register.html', controller: Register },
-      { path: '/chat.html', controller: Chat },
-      { path: '/account.html', controller: Account },
-      { path: '/account-edit.html', controller: AccountEdit },
-      { path: '/account-password.html', controller: AccountPassword },
+      {
+        path: '/',
+        name: 'Главная',
+        controller: Login,
+        styles: [
+          { name: 'main', path: 'welcome-pages.css'},
+        ]
+      },
+      {
+        path: '/login',
+        name: 'Вход',
+        controller: Login,
+        styles: [
+          { name: 'entry', path: 'welcome-pages.css'},
+        ]
+      },
+      {
+        path: '/register',
+        name: 'Регистрация',
+        controller: Register,
+        styles: [
+          { name: 'register', path: 'welcome-pages.css'},
+        ]
+      },
+      {
+        path: '/chat',
+        name: 'Чат',
+        controller: Chat,
+        styles: [
+          { name: 'chat', path: 'chat.css'},
+        ]
+      },
+      {
+        path: '/account',
+        name: 'Аккаунт',
+        controller: Account,
+        styles: [
+          { name: 'account', path: 'account.css'},
+        ]
+      },
+      {
+        path: '/account-edit',
+        name: 'Редактировать Аккаунт',
+        controller: AccountEdit,
+        styles: [
+          { name: 'account-edit', path: 'account.css'},
+        ]
+      },
+      {
+        path: '/account-password',
+        name: 'Сменить пароль',
+        controller: AccountPassword,
+        styles: [
+          { name: 'account-password', path: 'account.css'},
+        ]
+      },
+      {
+        path: '/sandbox',
+        name: 'Песочница',
+        controller: Sandbox,
+        styles: [
+          { name: 'sandbox', path: 'welcome-pages.css'},
+        ]
+      },
     ];
+
+    this.errorRoute = {
+      path: '/*',
+      name: 'Ошибка 404',
+      controller: Error,
+      styles: [
+        { name: 'Ошибка', path: 'error.css'},
+      ]
+    },
 
     this.potentialMatches = this.routes.map(route => {
       return {
-        route: route,
-        isMatch: location.pathname === route.path,
+        ...route,
+        isActive: location.pathname === route.path,
       }
     });
 
-    this.match = this.potentialMatches.find(potentialMatch => potentialMatch.isMatch);
-    this._controller = this.match ? this.match.route.controller : Error;
-  }
+    this.activeRoute = this.potentialMatches.find(potentialMatch => potentialMatch.isActive);
+    if (!this.activeRoute) this.activeRoute = this.errorRoute;
 
-  get controller() {
-    return this._controller;
+    Router.__instance = this;
   }
 };

@@ -1,9 +1,24 @@
-import { Router } from './router/router';
+import Router from './router/router';
+import Styler from './tools/Styler';
+import Templator from './tools/Templator';
 import EntryMixin from './mixins/entry.mixin.js';
+import Menu from "./Components/Menu";
 
-const router = new Router();
+class App {
+  constructor(containerId) {
+    this.$router = new Router();
+    this.$styler = new Styler();
+    this.$menu = new Menu(this.$router.routes);
+    this.$pageController = new this.$router.activeRoute.controller();
+    this.$pageStyles = this.$router.activeRoute.styles;
 
-const main = document.getElementById('main');
-const controller = new router.controller;
-controller.render(main);
-EntryMixin.addListeners();
+    const { template, data } = this.$pageController;
+    const markup = Templator.compile(template, data);
+    Templator.render(markup, containerId);
+    this.$styler.includeStyles(this.$pageStyles);
+    this.$menu.render('root');
+    EntryMixin.addListeners();
+  }
+}
+
+const app = new App('main');
