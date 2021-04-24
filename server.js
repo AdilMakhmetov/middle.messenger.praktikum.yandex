@@ -39,4 +39,5 @@ const options = {
 const bundler = new Bundler(entryFiles, options);
 
 app.use(bundler.middleware());
-app.listen(PORT);
+
+if (process.env.NODE_ENV === 'production') app.listen(PORT);
