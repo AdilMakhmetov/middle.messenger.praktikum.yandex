@@ -1,4 +1,4 @@
-const STYLES_DIR = './css';
+const STYLES_DIR = './styles';
 
 export default class Styler {
   constructor() {

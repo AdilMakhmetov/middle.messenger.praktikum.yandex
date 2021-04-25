@@ -2,13 +2,13 @@ export default `
 <div class="container">
   <div class="actions">
     <button class="back">
-      <img src="{{back}}" alt="">
+      <img src="./static/vector/back.svg" alt="">
     </button>
     <button class="cirleIcon cirleIcon-account">
-      <img src="{{account}}" alt="">
+      <img src="./static/vector/account.svg" alt="">
     </button>
     <button class="cirleIcon cirleIcon-upload">
-      <img src="{{upload}}" alt="">
+      <img src="./static/vector/upload.svg" alt="">
     </button>
   </div>
   <div class="account">
@@ -23,7 +23,7 @@ export default `
       <input type="tel" class="input" placeholder="Телефон">
     </div>
     <button class="button button-primary button-full">
-      <img src="{{save}}" alt="">
+      <img src="./static/vector/save.svg" alt="">
       <span class="button--text">Сохранить</span>
     </button>
   </div>

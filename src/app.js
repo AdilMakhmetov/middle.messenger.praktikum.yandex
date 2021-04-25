@@ -1,8 +1,8 @@
 import Router from './router/router';
 import Styler from './tools/Styler';
 import Templator from './tools/Templator';
-import EntryMixin from './mixins/entry.mixin.js';
-import Menu from "./Components/Menu";
+import EntryMixin from './mixins/entry.mixin';
+import Menu from "./components/Menu";
 
 class App {
   constructor(containerId) {

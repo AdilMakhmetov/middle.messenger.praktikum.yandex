@@ -1,27 +1,27 @@
 export default `
 <div class="container">
   <header class="header">
-    <img class="logo" src="{{ logo }}" alt="">
+    <img class="logo" src="./static/vector/logo.png" alt="">
     <div class="tagline tagline-mr">
       <p class="tagline--text">Keep In Touch</p>
-      <img alt="" class="tagline--icon" src="{{dots}}">
+      <img alt="" class="tagline--icon" src="./static/vector/dots.svg">
     </div>
     <button class="button button-primary mobileHide">+ Добавить пользователя</button>
     <div class="header--profile">
-      <img src="{{photo}}" alt="">
+      <img src="./static/images/photo.png" alt="">
       <p class="header--name mobileHide">{{name}}</p>
     </div>
-    <img class="menuIcon" src="{{menu}}" alt="">
+    <img class="menuIcon" src="./static/vector/menu.svg" alt="">
   </header>
 
   <sidebar class="sidebar">
     <div class="search">
-      <img src="{{search}}" alt="" class="search--icon">
+      <img src="./static/vector/search.svg" alt="" class="search--icon">
       <input type="text" class="search--input" placeholder="Поиск...">
     </div>
     <nav class="peoples">
       <div class="people people-active">
-        <img class="people--avatar" src="{{user}}" alt="" >
+        <img class="people--avatar" src="./static/vector/user.svg" alt="" >
         <div class="people--info">
           <p class="people--name">John Doe</p>
           <p class="people--message">Hi, Text me when you can...</p>
@@ -33,7 +33,7 @@ export default `
       </div>
       <div class="people">
         <div class="people--avatar">
-          <img src="{{user}}" alt="" >
+          <img src="./static/vector/user.svg" alt="" >
         </div>
         <div class="people--info">
           <p class="people--name">Anna Doe</p>
@@ -46,7 +46,7 @@ export default `
       </div>
       <div class="people">
         <div class="people--avatar">
-          <img src="{{user}}" alt="" >
+          <img src="./static/vector/user.svg" alt="" >
         </div>
         <div class="people--info">
           <p class="people--name">Dan Green</p>
@@ -58,7 +58,7 @@ export default `
         </div>
       </div>
       <div class="people">
-        <img class="people--avatar" src="{{user}}" alt="" >
+        <img class="people--avatar" src="./static/vector/user.svg" alt="" >
         <div class="people--info">
           <p class="people--name">John Doe</p>
           <p class="people--message">Hi, Text me when you can...</p>
@@ -70,7 +70,7 @@ export default `
       </div>
       <div class="people">
         <div class="people--avatar">
-          <img src="{{user}}" alt="" >
+          <img src="./static/vector/user.svg" alt="" >
         </div>
         <div class="people--info">
           <p class="people--name">Anna Doe</p>
@@ -83,7 +83,7 @@ export default `
       </div>
       <div class="people">
         <div class="people--avatar">
-          <img src="{{user}}" alt="" >
+          <img src="./static/vector/user.svg" alt="" >
         </div>
         <div class="people--info">
           <p class="people--name">Dan Green</p>
@@ -96,7 +96,7 @@ export default `
       </div>
       <div class="people">
         <div class="people--avatar">
-          <img src="{{user}}" alt="" >
+          <img src="./static/vector/user.svg" alt="" >
         </div>
         <div class="people--info">
           <p class="people--name">Anna Doe</p>
@@ -109,7 +109,7 @@ export default `
       </div>
       <div class="people">
         <div class="people--avatar">
-          <img src="{{user}}" alt="" >
+          <img src="./static/vector/user.svg" alt="" >
         </div>
         <div class="people--info">
           <p class="people--name">Dan Green</p>
@@ -122,7 +122,7 @@ export default `
       </div>
       <div class="people">
         <div class="people--avatar">
-          <img src="{{user}}" alt="" >
+          <img src="./static/vector/user.svg" alt="" >
         </div>
         <div class="people--info">
           <p class="people--name">Anna Doe</p>
@@ -135,7 +135,7 @@ export default `
       </div>
       <div class="people">
         <div class="people--avatar">
-          <img src="{{user}}" alt="" >
+          <img src="./static/vector/user.svg" alt="" >
         </div>
         <div class="people--info">
           <p class="people--name">Dan Green</p>
@@ -148,7 +148,7 @@ export default `
       </div>
       <div class="people">
         <div class="people--avatar">
-          <img src="{{user}}" alt="" >
+          <img src="./static/vector/user.svg" alt="" >
         </div>
         <div class="people--info">
           <p class="people--name">Anna Doe</p>
@@ -161,7 +161,7 @@ export default `
       </div>
       <div class="people">
         <div class="people--avatar">
-          <img src="{{user}}" alt="" >
+          <img src="./static/vector/user.svg" alt="" >
         </div>
         <div class="people--info">
           <p class="people--name">Dan Green</p>
@@ -174,18 +174,18 @@ export default `
       </div>
     </nav>
     <button class="sidebar--toggle">
-      <img class="sidebar--icon" src="{{arrow}}" alt="">
+      <img class="sidebar--icon" src="./static/vector/arrow.svg" alt="">
     </button>
   </sidebar>
 
   <section class="chat">
     <div class="chat--header">
       <button class="back">
-        <img src="{{back}}" alt="">
+        <img src="./static/vector/back.svg" alt="">
       </button>
       <div class="interlocutor">
         <div class="profile">
-          <img src="{{user}}" alt="">
+          <img src="./static/vector/user.svg" alt="">
         </div>
         <div class="interlocutor--text">
           <div class="interlocutor--name">John Doe</div>
@@ -194,11 +194,11 @@ export default `
       </div>
       <div class="actions">
         <button class="button button-primary">
-          <img src="{{broom}}" alt="">
+          <img src="./static/vector/broom.svg" alt="">
           <span class="button--text mobileHide">Очистить чат</span>
         </button>
         <button class="button">
-          <img src="{{trash}}" alt="">
+          <img src="./static/vector/trash.svg" alt="">
           <span class="button--text mobileHide">Удалить пользователя</span>
         </button>
       </div>
@@ -210,25 +210,25 @@ export default `
           <div class="chat--items">
             <div class="chat--item chat--item-me">
               <div class="profile">
-                <img src="{{user}}" alt="">
+                <img src="./static/vector/user.svg" alt="">
               </div>
               <div class="chat--message">
                 <p class="chat--text">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                 <div class="chat--messageInfo">
                   <span class="chat--time">22:10</span>
-                  <img class="chat--status" src="{{status}}" alt="">
+                  <img class="chat--status" src="./static/vector/status.svg" alt="">
                 </div>
               </div>
             </div>
             <div class="chat--item chat--item-i">
               <div class="profile">
-                <img src="{{photo}}" alt="">
+                <img src="./static/vector/photo.svg" alt="">
               </div>
               <div class="chat--message chat--message-i">
                 <p class="chat--text">Where does it come from?</p>
                 <div class="chat--messageInfo">
                   <span class="chat--time">22:12</span>
-                  <img class="chat--status" src="{{status}}" alt="">
+                  <img class="chat--status" src="./static/vector/status.svg" alt="">
                 </div>
               </div>
             </div>
@@ -239,25 +239,25 @@ export default `
           <div class="chat--items">
             <div class="chat--item chat--item-me">
               <div class="profile">
-                <img src="{{user}}" alt="">
+                <img src="./static/vector/user.svg" alt="">
               </div>
               <div class="chat--message chat--message-me">
                 <p class="chat--text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
                 <div class="chat--messageInfo">
                   <span class="chat--time">00:16</span>
-                  <img class="chat--status" src="{{status}}" alt="">
+                  <img class="chat--status" src="./static/vector/status.svg" alt="">
                 </div>
               </div>
             </div>
             <div class="chat--item chat--item-i">
               <div class="profile">
-                <img src="{{photo}}" alt="">
+                <img src="./static/vector/photo.svg" alt="">
               </div>
               <div class="chat--message chat--message-i">
                 <p class="chat--text">some-file.pdf</p>
                 <div class="chat--messageInfo">
                   <span class="chat--time">22:12</span>
-                  <img class="chat--status" img src="{{status}}" alt="">
+                  <img class="chat--status" img src="./static/vector/status.svg" alt="">
                 </div>
               </div>
             </div>
@@ -269,28 +269,28 @@ export default `
       <div class="attach--modal">
         <div class="modal--content">
           <button class="attach--button">
-            <img src="{{media}}" alt="">
+            <img src="./static/vector/media.svg" alt="">
             <span class="attach--name">Медиа</span>
           </button>
           <button class="attach--button">
-            <img src="{{file}}" alt="">
+            <img src="./static/vector/file.svg" alt="">
             <span class="attach--name">Файл</span>
           </button>
           <button class="attach--button">
-            <img src="{{location}}" alt="">
+            <img src="./static/vector/location.svg" alt="">
             <span class="attach--name">Локация</span>
           </button>
         </div>
       </div>
       <button class="write--attach">
-        <img src="{{attach}}" alt="">
+        <img src="./static/vector/attach.svg" alt="">
       </button>
       <input type="text" class="write--input" placeholder="Написать...">
       <button class="write--smile">
-        <img src="{{smile}}" alt="">
+        <img src="./static/vector/smile.svg" alt="">
       </button>
       <button class="write--send">
-        <img src="{{send}}" alt="">
+        <img src="./static/vector/send.svg" alt="">
       </button>
     </div>
   </section>
@@ -298,16 +298,16 @@ export default `
 <div class="confirm">
   <div class="overlay"></div>
   <div class="modal">
-    <img class="close" src="{{cancel}}" alt="">
+    <img class="close" src="./static/vector/cancel.svg" alt="">
     <div class="modal--content">
       <p class="modal--text">Вы уверены что хотите {{ action }}?</p>
       <div class="modal--inline">
         <button class="button button-primary">
-          <img src="{{confirm}}" alt="">
+          <img src="./static/vector/confirm.svg" alt="">
           <span class="button--text">Подтвердить</span>
         </button>
         <button class="button">
-          <img src="{{close}}" alt="">
+          <img src="./static/vector/close.svg" alt="">
           <span class="button--text">Отмена</span>
         </button>
       </div>

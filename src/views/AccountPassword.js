@@ -1,6 +1,6 @@
-import template from '../../static/templates/Error.template';
+import template from '../templates/AccountPassword.template';
 
-export default class Error {
+export default class AccountPassword {
   constructor() {
     this.data = this.createData();
     this.template = template;

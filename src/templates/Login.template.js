@@ -1,10 +1,10 @@
 export default `
 <div class="container">
   <div class="brand">
-    <img class="logo logo-brand" src="{{ logo }}" alt="">
+    <img class="logo logo-brand" src="./static/vector/logo.svg" alt="">
     <div class="tagline tagline-brand">
-      <p class="tagline--text">{{ slogan }}</p>
-      <img alt="" class="tagline--icon" src="{{ dots }}">
+      <p class="tagline--text">{{slogan}}</p>
+      <img alt="" class="tagline--icon" src="./static/vector/dots.svg">
     </div>
   </div>
   <div class="form">

@@ -1,5 +1,4 @@
-import Pictures from '../tools/Pictures';
-import template from '../../static/templates/Sandbox.template';
+import template from '../templates/Sandbox.template';
 
 export default class Sandbox {
   constructor() {
@@ -10,8 +9,6 @@ export default class Sandbox {
   createData() {
     return ({
       slogan: 'Keep In Touch',
-      brand: Pictures.Brand,
-      dots: Pictures.Dots,
     });
   }
 }

@@ -1,11 +1,11 @@
-import Login from '../Components/Login';
-import Register from '../Components/Register';
-import Account from '../Components/Account';
-import AccountEdit from '../Components/AccountEdit';
-import AccountPassword from '../Components/AccountPassword';
-import Chat from '../Components/Chat';
-import Sandbox from '../Components/Sandbox';
-import Error from '../Components/Error';
+import Login from '../views/Login';
+import Register from '../views/Register';
+import Account from '../views/Account';
+import AccountEdit from '../views/AccountEdit';
+import AccountPassword from '../views/AccountPassword';
+import Chat from '../views/Chat';
+import Sandbox from '../views/Sandbox';
+import Error from '../views/Error';
 
 export default class Router {
   constructor() {

@@ -2,13 +2,13 @@ export default `
 <div class="container">
   <div class="actions">
     <button class="back">
-      <img src="{{back}}" alt="">
+      <img src="./static/vector/back.svg" alt="">
     </button>
     <button class="cirleIcon cirleIcon-account">
-      <img src="{{account}}" alt="">
+      <img src="./static/vector/account.svg" alt="">
     </button>
     <button class="cirleIcon cirleIcon-upload">
-      <img src="{{upload}}" alt="">
+      <img src="./static/vector/upload.svg" alt="">
     </button>
   </div>
   <div class="account">
@@ -42,11 +42,11 @@ export default `
     </div>
     <div class="edits">
       <button class="button button-primary button-full">
-        <img src="{{edit}}" alt="">
+        <img src="./static/vector/edit.svg" alt="">
         <span class="button--text">Реадктировать</span>
       </button>
       <button class="button button-primary button-full">
-        <img src="{{password}}" alt="">
+        <img src="./static/vector/password.svg" alt="">
         <span class="button--text">Сменить пароль</span>
       </button>
     </div>

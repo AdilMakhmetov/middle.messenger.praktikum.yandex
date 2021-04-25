@@ -1,5 +1,4 @@
-import Pictures from '../tools/Pictures';
-import template from '../../static/templates/Register.template';
+import template from '../templates/Register.template';
 
 export default class Register {
   constructor() {
@@ -10,8 +9,6 @@ export default class Register {
   createData() {
     return ({
       slogan: 'Keep In Touch',
-      logo: Pictures.Brand,
-      dots: Pictures.Dots,
     });
   }
 }
